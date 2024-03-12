@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bg_base">
+
+    <View
+        android:layout_width="136dp"
+        android:layout_height="271dp"
+        android:background="@drawable/roboto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        >
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultra Cleaner"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp">
+
+    </TextView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:indeterminate="false"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/loading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dp"
+        android:text="Loading"
+        android:textColor="@android:color/white"
+        android:textSize="18sp">
+    </TextView>
+</RelativeLayout>
