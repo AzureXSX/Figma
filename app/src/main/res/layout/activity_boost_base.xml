@@ -28,48 +28,30 @@
             >
 
         </View>
-        <ImageView
-            android:id="@+id/r_nav"
+        <RelativeLayout
             android:layout_width="69dp"
-            android:layout_height="82dp"
-            android:src="@drawable/rocket"
-            android:background="@drawable/navbtn"
-            android:padding="20dp"
-            >
-        </ImageView>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            >
+            android:layout_height="82dp">
+            <ImageView
+                android:id="@+id/r_nav"
+                android:layout_width="69dp"
+                android:layout_height="82dp"
+                android:src="@drawable/rocket"
+                android:background="@drawable/navbtn"
+                android:padding="20dp"
+                >
+            </ImageView>
+            <ImageView
+                android:id="@+id/A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attention"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                >
 
-        </View>
-        <ImageView
-            android:id="@+id/b_nav"
-            android:layout_width="69dp"
-            android:layout_height="82dp"
-            android:src="@drawable/outline_battery"
-            android:background="@drawable/navbtn"
-            android:padding="20dp"
-            >
-        </ImageView>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            >
-
-        </View>
-
-        <ImageView
-            android:id="@+id/f_nav"
-            android:layout_width="69dp"
-            android:layout_height="82dp"
-            android:src="@drawable/fan"
-            android:background="@drawable/navbtn"
-            android:padding="20dp"
-            >
-        </ImageView>
+            </ImageView>
+        </RelativeLayout>
 
         <View
             android:layout_width="0dp"
@@ -78,15 +60,97 @@
             >
 
         </View>
-        <ImageView
-            android:id="@+id/t_nav"
+        <RelativeLayout
             android:layout_width="69dp"
-            android:layout_height="82dp"
-            android:src="@drawable/trash_bottom"
-            android:background="@drawable/navbtn"
-            android:padding="20dp"
+            android:layout_height="82dp">
+            <ImageView
+                android:id="@+id/b_nav"
+                android:layout_width="69dp"
+                android:layout_height="82dp"
+                android:src="@drawable/outline_battery"
+                android:background="@drawable/navbtn"
+                android:padding="20dp"
+                >
+            </ImageView>
+            <ImageView
+                android:id="@+id/A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attention"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                >
+
+            </ImageView>
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             >
-        </ImageView>
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="69dp"
+            android:layout_height="82dp">
+            <ImageView
+                android:id="@+id/f_nav"
+                android:layout_width="69dp"
+                android:layout_height="82dp"
+                android:src="@drawable/fan"
+                android:background="@drawable/navbtn"
+                android:padding="20dp"
+                >
+            </ImageView>
+            <ImageView
+                android:id="@+id/A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attention"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                >
+
+            </ImageView>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="69dp"
+            android:layout_height="82dp">
+            <ImageView
+                android:id="@+id/t_nav"
+                android:layout_width="69dp"
+                android:layout_height="82dp"
+                android:src="@drawable/trash_bottom"
+                android:background="@drawable/navbtn"
+                android:padding="20dp"
+                >
+            </ImageView>
+            <ImageView
+                android:id="@+id/A4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attention"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="11dp"
+                >
+
+            </ImageView>
+        </RelativeLayout>
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"

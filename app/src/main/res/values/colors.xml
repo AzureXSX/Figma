@@ -4,4 +4,5 @@
     <color name="text_color_base">#10347E</color>
     <color name="active_color">#10347D</color>
     <color name="inactive_color">#FFFFFF</color>
+    <color name="attention_color">#EB2E46</color>
 </resources>

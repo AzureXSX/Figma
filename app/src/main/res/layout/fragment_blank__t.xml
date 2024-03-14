@@ -360,18 +360,33 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/boost_BTN"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18.5dp"
-            android:layout_marginBottom="16.5dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/round_boost_btn"
             android:text="CLEAN"
             android:textColor="@android:color/white"
             android:textSize="32sp"
             >
         </androidx.appcompat.widget.AppCompatButton>
+
+        <ProgressBar
+            android:id="@+id/SHOW_PROGRESS"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/circulum_colro"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:indeterminate="false"
+            android:background="@drawable/circular"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18.5dp"
+            android:layout_marginBottom="10.5dp"
+            >
+        </ProgressBar>
 
         <TextView
             android:layout_width="wrap_content"

@@ -1,5 +1,6 @@
 package com.example.xux;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
@@ -7,6 +8,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -14,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 /**
@@ -96,6 +99,49 @@ public class BlankFragment_F extends Fragment {
         LinearLayout layout = (LinearLayout) view.findViewById(R.id.add_layout);
 
         layout.setBackground(gradient);
+
+        AppCompatButton btn = view.findViewById(R.id.boost_BTN);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("MissingInflatedId")
+            @Override
+            public void onClick(View v) {
+                BoostBase main = (BoostBase) getActivity();
+                if(!main.get_isOptimizedFan()){
+                    ProgressBar progressBar = view.findViewById(R.id.SHOW_PROGRESS);
+                    new Thread(new Runnable() {
+                        public void run() {
+                            int progress = 0;
+
+                            while (progress <= 100) {
+                                // Update the progress bar
+                                progressBar.setProgress(progress);
+
+                                // Sleep for 200 milliseconds to simulate loading
+                                try { Thread.sleep(100); } catch (InterruptedException e) { e.printStackTrace(); }
+
+                                // Increment the progress
+                                int finalProgress = progress;
+
+
+                                if(getActivity() != null) {
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            btn.setText(finalProgress + "%");
+                                        }
+                                    });
+                                }
+
+                                progress++;
+                            }
+
+                            main.set_isOptimizedFan(true);
+                        }
+                    }).start();
+                }
+            }
+        });
 
         return view;
     }
